@@ -1,4 +1,4 @@
-# Switch Guide
+# GalacticNX Guide
 
 [The guide can be found here!](https://galacticnx.github.io/guide)
 
