@@ -5,10 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <meta name="author" content="NH Discord Server.">
-        <link rel="canonical" href="https://nh-server.github.io/switch-guide/user_guide/emummc/sd_preparation/">
+        <meta name="author" content="GalacticNX.">
+        <link rel="canonical" href="https://galacticnx.github.io/guide/user_guide/emummc/sd_preparation/">
         <link rel="shortcut icon" href="../../../img/favicon.ico">
-        <title>SD preparations - NH Switch Guide</title>
+        <title>SD preparations - GalacticNX Install Guide</title>
         <link href="../../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../../css/base.css" rel="stylesheet">
@@ -24,7 +24,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="../../..">NH Switch Guide</a>
+                <a class="navbar-brand" href="../../..">GalacticNX Install Guide</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -191,8 +191,8 @@
                     <div class="col-md-9" role="main">
 
 <h1 id="sd-preparation">SD Preparation</h1>
-<p>We will now place the required files for the Atmosphere custom firmware and some additional homebrew files on the SD card.</p>
-<p>Atmosphere has its own bootloader, called fusee. For the purposes of this guide we will be using Hekate instead, so that we can back up the system's NAND (internal storage) and take advantage of other advanced features in the future.</p>
+<p>We will now place the required files for GalacticNX on the SD card.</p>
+<p>Atmosphere has its own bootloader, called fusee. For the purposes of this guide we will be using Hekate+Atmosphere (hekatmosphere) instead, so that we can back up the system's NAND (internal storage) and take advantage of other advanced features in the future.</p>
 <p>&nbsp;</p>
 <div class="admonition warning">
 <p class="admonition-title">File name extensions</p>
@@ -202,34 +202,14 @@
 <h3 id="what-you-need">What you need</h3>
 <div class="admonition tip">
 <ul>
-<li>The latest release of <a href="https://github.com/CTCaer/Hekate/releases/" target="_blank">Hekate</a> (Download the <code>hekate_ctcaer_(version).zip</code> release of hekate)</li>
-<li>The hekate config file: <a href="../../../files/emu/hekate_ipl.ini" download>hekate_ipl.ini</a></li>
-<li>The 90dns DNS redirection config: <a href="../../../files/emummc.txt" download>emummc.txt</a></li>
-<li>The bootlogo zip folder: <a href="../../../files/bootlogos.zip" download>bootlogos.zip</a></li>
-<li>The latest release of <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a>. Download the <code>atmosphere-(version)-master-(version)+hbl-(version)+hbmenu-(version).zip</code> release of Atmosphere.</li>
-<li>The latest release of <a href="https://github.com/shchmue/Lockpick_RCM/releases" target="_blank">Lockpick_RCM</a> (Download the <code>Lockpick_RCM.bin</code> release of Lockpick)</li>
-<li>The latest release of <a href="https://github.com/J-D-K/JKSV/releases" target="_blank">JKSV</a> (Download the <code>JKSV.nro</code> release of JKSV)</li>
-<li>The latest release of <a href="https://github.com/mtheall/ftpd/releases" target="_blank">FTPD</a> (Download the <code>ftpd.nro</code> release of FTPD)</li>
-<li>The latest release of <a href="https://github.com/exelix11/SwitchThemeInjector/releases" target="_blank">NXThemeInstaller</a> (Download the <code>NxThemesInstaller.nro</code> release of NxThemeInstaller)</li>
-<li>The latest release of <a href="https://github.com/joel16/NX-Shell/releases" target="_blank">NX-Shell</a> (Download the <code>NX-Shell.nro</code> release of nx-shell)</li>
-<li>The latest release of the <a href="https://github.com/vgmoose/hb-appstore/releases" target="_blank">hbappstore</a> (Download the <code>appstore.nro</code> release of hbappstore)</li>
+<li>The latest release of <a href="https://github.com/GalacticNX/galactic/releases/latest/download/galactic.zip" target="_blank">Galactic</a> (Download the <code>galactic.zip</code> release of Galactic.</li>
 </ul>
 </div>
 <h3 id="instructions">Instructions</h3>
 <div class="admonition tip">
 <ol>
 <li>Insert your Switch's SD card into your PC</li>
-<li>Copy <em>the contents of</em> the Atmosphere <code>.zip</code> file to the root of your SD card</li>
-<li>Copy the <code>bootloader</code> folder from the Hekate <code>.zip</code> file to the root of your SD card</li>
-<li>Copy the <code>bootloader</code> folder from the <code>bootlogos.zip</code> file to the root of your SD card<ul>
-<li>If you're asked to merge the bootloader folders, do so.</li>
-</ul>
-</li>
-<li>Copy <code>hekate_ipl.ini</code> to the <code>bootloader</code> folder on your SD card</li>
-<li>Copy <code>Lockpick_RCM.bin</code> to the <code>/bootloader/payloads</code> folder on your SD card</li>
-<li>Create a folder named <code>hosts</code> inside the <code>atmosphere</code> folder on your SD card, and put <code>emummc.txt</code> in it</li>
-<li>Create a folder named <code>appstore</code> inside the <code>switch</code> folder on your SD card, and put <code>appstore.nro</code> in it</li>
-<li>Copy <code>JKSV.nro</code>, <code>ftpd.nro</code>, <code>NX-Shell.nro</code> and <code>NxThemesInstaller.nro</code> to the <code>switch</code> folder on your SD card</li>
+<li>Copy <em>the contents of</em> the Galactic <code>.zip</code> file to the root of your SD card</li>
 <li>If you were already using your microSD card as a storage device for your games and backed up the Nintendo folder before partitioning your microSD card, please place it back on the root of your microSD card.</li>
 <li>Reinsert your SD card back into your Switch</li>
 </ol>

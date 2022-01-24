@@ -5,10 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <meta name="author" content="NH Discord Server.">
-        <link rel="canonical" href="https://nh-server.github.io/switch-guide/user_guide/emummc/launching_cfw/">
+        <meta name="author" content="GalacticNX.">
+        <link rel="canonical" href="https://galacticnx.github.io/guide/user_guide/emummc/launching_cfw/">
         <link rel="shortcut icon" href="../../../img/favicon.ico">
-        <title>Launching CFW - NH Switch Guide</title>
+        <title>Launching CFW - GalacticNX Install Guide</title>
         <link href="../../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../../css/base.css" rel="stylesheet">
@@ -24,7 +24,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="../../..">NH Switch Guide</a>
+                <a class="navbar-brand" href="../../..">GalacticNX Install Guide</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -203,7 +203,7 @@
 <ol>
 <li>Power on your Switch into RCM, and inject the Hekate payload</li>
 <li>Navigate to <code>Launch</code> using the touch screen</li>
-<li>Find <code>Atmosphere FSS0 EmuMMC</code> and launch it</li>
+<li>Find <code>Atmosphere</code> and launch it</li>
 </ol>
 </div>
 <p>Your Switch is now booting into Atmosphere.</p>
@@ -214,7 +214,15 @@
 </div>
 <p>&nbsp;</p>
 <h3 id="launching-the-homebrew-menu">Launching the Homebrew Menu</h3>
-<p>You will now be able to launch the Homebrew Menu by opening the album or by holding the R button while launching any game (including demos/cartridges), or application (e.g. Youtube/Hulu). If R is not held, the game or application will launch like normal.</p>
+<p>You will now be able to launch the Homebrew Menu by opening the album or by holding the R button while launching any game (including demos/cartridges), or application (e.g. Youtube/Hulu). If R is not held, the game or application will launch like normal. Here is how to copy an app to emuMMC to use this feature:
+    1. Copy the Nintendo folder on the root of your microSD card to the backup location on your computer.
+    2. Reinsert the microSD card back into the console and boot normally (without hekate and RCM).
+    3. Open the Nintendo eShop applet and download YouTube.
+    4. Turn off the console and reinsert the microSD card back into your computer.
+    5. Copy the Nintendo folder to the emuMMC/RAW1/Nintendo folder, selecting the merge or overwrite option when prompted.
+    6. Delete the Nintendo folder from the root of the microSD card.
+    7. Copy the other Nintendo folder (the backup you just made) back to the root of the microSD card.
+    8. Reinsert the microSD card and boot into Galactic.</p>
 <div class="admonition warning">
 <p class="admonition-title">A note about using the album for the Homebrew Menu</p>
 <ul>
@@ -224,7 +232,7 @@
 <div class="admonition tip">
 <p class="admonition-title">Adding new applications</p>
 <ul>
-<li>Place homebrew applications (<code>.nro</code> files) into the <code>switch</code> folder on your SD card.</li>
+<li>Place homebrew applications (<code>.nro</code> files) into the <code>switch</code> folder on your SD card, or download new homebrew right from the console via the "HB App Store" in <code>hbmenu</code></li>
 </ul>
 </div>
 <p>&nbsp;</p>
@@ -245,6 +253,12 @@
 </li>
 <li>
 <p>hbappstore is a homebrew app store where a large collection of switch homebrew is kept.</p>
+</li>
+<li>
+<p>SysDVR lets you capture your Switch's screen and send it to your computer.</p>
+</li>
+<li>
+<p>Goldleaf is a title manager. It lets you install things and browse the Internet.</p>
 </li>
 </ul>
 </div>

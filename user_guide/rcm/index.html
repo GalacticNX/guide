@@ -5,10 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <meta name="author" content="NH Discord Server.">
-        <link rel="canonical" href="https://nh-server.github.io/switch-guide/user_guide/rcm/">
+        <meta name="author" content="GalacticNX.">
+        <link rel="canonical" href="https://galacticnx.github.io/guide/user_guide/rcm/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>RCM - NH Switch Guide</title>
+        <title>RCM - GalacticNX Install Guide</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -24,7 +24,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="../..">NH Switch Guide</a>
+                <a class="navbar-brand" href="../..">GalacticNX Install Guide</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -191,17 +191,9 @@
                     <div class="col-md-9" role="main">
 
 <h1 id="rcm">RCM</h1>
-<p>RCM (short for ReCovery Mode) is a mode for the switch that allows nintendo to send the switch commands to do various things. People found out that on unpatched switches, you could send a payload, and then quickly copy it into the memory buffer behind the stack, overflowing the memory buffer into the stack, meaning you smash the stack and get full access to everything on the system. We use it here to launch atmosphere.</p>
-<div class="admonition tip">
-<p class="admonition-title">emuNAND vs emuMMC vs sysNAND</p>
-<ul>
-<li>sysNAND stands for System NAND, meaning the internal storage in your actual Switch.</li>
-<li>emuNAND stands for emulated NAND, this means that your entire NAND (system memory) will run off your microSD card with Custom Firmware (CFW). This NAND's contents (games, applications, saves, etc.) are <em>completely separate</em> from your sysNAND.</li>
-<li>emuMMC is the name for the currently used implementation of emuNAND on Switch. It has no difference from emuNAND besides name.</li>
-</ul>
-</div>
+<p>RCM (short for ReCovery Mode) is a mode for the Switch that allows Nintendo to send the Switch commands to do various things. People found out that on unpatched Switches, you could send a payload, and then quickly copy it into the memory buffer behind the stack, overflowing the memory buffer into the stack, meaning you smash the stack and get full access to everything on the system. We use it here to launch GalacticNX.</p>
 <hr />
-<h3 id="emunand-cfw-recommended">emuNAND CFW (<strong>Recommended</strong>)</h3>
+<h3 id="emunand-cfw">emuNAND CFW</h3>
 <div class="admonition tip">
 <p class="admonition-title">What's needed for emuNAND</p>
 <ul>
@@ -211,19 +203,12 @@
 <ul>
 <li>Using homebrew applications such as save editors, or cheating in games offline without "dirtying" or affecting sysNAND, allowing sysNAND to be used online without ban risk.</li>
 <li>Allowing users on patched Switches using Caffeine to update their emuNAND to latest and use it online, keeping sysNAND at a lower vulnerable version.</li>
+<li>Galactic only supports emuNAND/emuMMC on unpatched units at this time.</li>
 </ul>
 </div>
 <p>&nbsp;</p>
 <h4 id="continue-to-entering-rcm"><a href="../emummc/entering_rcm/">Continue to Entering RCM <i class="fa fa-arrow-circle-right fa-lg"></i></a></h4>
-<hr />
-<h3 id="sysnand-cfw-not-recommended">sysNAND CFW (<strong>Not Recommended</strong>)</h3>
-<p>This is for the people who don't have an 64GB microSD card or larger, or who don't want emuNAND for whatever reason. </p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>If you set up an emuNAND you may still have CFW on your sysNAND if you choose to use it. You do not have to follow the guide linked below; all the files are the same, you simply select "sysNAND CFW" from Hekate/Nyx.</p>
-</div>
-<p>&nbsp;</p>
-<h4 id="continue-to-sd-preparations-sysnand-cfw-not-recommended"><a href="../sysnand/sd_preparation/">Continue to SD preparations (sysNAND CFW) (<strong>Not Recommended</strong>) <i class="fa fa-arrow-circle-right fa-lg"></i></a></h4></div>
+<hr /></div>
             </div>
         </div>
 
