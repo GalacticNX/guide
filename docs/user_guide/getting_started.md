@@ -20,7 +20,7 @@ Patched and Mariko units can be identified by their serial number. This number c
 
 ### Determining if your Switch is vulnerable
 
-The homebrew community has crowdsourced a list of known serial numbers which are vulnerable to fusee-gelee. 
+The homebrew community has crowdsourced a list of known serial numbers which are vulnerable to fusee-gelee. The easiest way to check if your console is patched is to plug the first few characters of your serial number into [this site](https://ismyswitchpatched.com/) 
 
 - If your serial number is on this list as "potentially patched", follow the guide and see if your system works. 
 - If your serial number is listed as "patched", there is nothing you can do at this time. 
@@ -75,9 +75,9 @@ The following information is based on [this GBATemp thread](https://gbatemp.net/
 
 | Firmware Version | Unpatched Switches (HAC-001) | Patched Switches (HAC-001) | "New" Switch (HAC-001-01)   | Switch Lite (HDH-001)  | 
 |:---------------|:--------------------------------|:---------------------------|:----------------------------|:-----------------------|
-| 1.0.0          | Nereba or [**RCM**](rcm.md)     | **N/A**                    | **N/A**                     | **N/A**                |
-| 2.0.0 - 3.0.2  | Caffeine or [**RCM**](rcm.md)   | **N/A**                    | **N/A**                     | **N/A**                |
-| 4.0.0 - 4.1.0  | Caffeine or [**RCM**](rcm.md)   | Caffeine                   | **N/A**                     | **N/A**                |
+| 1.0.0          | [**RCM**](rcm.md)               | **N/A**                    | **N/A**                     | **N/A**                |
+| 2.0.0 - 3.0.2  | [**RCM**](rcm.md)               | **N/A**                    | **N/A**                     | **N/A**                |
+| 4.0.0 - 4.1.0  | [**RCM**](rcm.md)               | Caffeine                   | **N/A**                     | **N/A**                |
 | 5.0.0 - 7.0.0  | [**RCM**](rcm.md)               | Wait for CFW               | **N/A**                     | **N/A**                |
 | 7.0.1          | [**RCM**](rcm.md)               | Wait for CFW               | Cart update to 8.0.1        | **N/A**                |
 | 8.0.1          | [**RCM**](rcm.md)               | Wait for homebrew          | Wait for homebrew           | Wait for homebrew      |

@@ -2,42 +2,26 @@
 
 This page documents how you can keep your system up-to-date.
 
-After following our guide, your system will consist of three core elements that can be updated. Atmosphere, Hekate and your system firmware.
+After following our guide, your system will consist of two core elements that can be updated: Galactic and your system firmware.
 
-## Updating Atmosphere
+## Updating Galactic
 
-When updating Atmosphere always make sure to _read the release notes_. They may list important changes and modifications to your system.
+When updating, always make sure to _read the release notes_. They may list important changes and modifications to your system.
 
-!!! warning "Updating from below Atmosphere 1.0.0"
-    If you update from below Atmosphere 1.0.0, there are additional steps to follow. You will have to delete the `sept` folder from your sd, delete `fusee-secondary.bin` from your `atmosphere` folder and update your hekate config file: <a href="../../files/emu/hekate_ipl.ini" download>hekate_ipl.ini</a> in the `bootloader` folder.
-
-When a new version of Atmosphere releases, you can update Atmosphere by following these steps:
+When a new version of Galactic releases, you can update by following these steps:
 
 
 1. Turn off your Nintendo Switch and plug your SD card in your computer.
-2. Download the latest release of <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a> (Download the `atmosphere-(version)-master-(version)+hbl-(version)+hbmenu-(version).zip` release of Atmosphere.)
-3. Copy *the contents of* the Atmosphere `.zip` file to the root of your SD card.
+2. Download the latest release of <a href="https://github.com/GalacticNX/galactic/releases/latest/download/galactic.zip" target="_blank">Galactic</a> (Download the `galactic.zip` release of Galactic.)
+3. Copy *the contents of* the Galactic `.zip` file to the root of your SD card.
     - If you are prompted to overwrite files, do so.
-4. (If your hekate is not on the latest version) Update hekate via the steps below
-5. Put your SD card back in your Switch and launch CFW.
-
-## Updating Hekate
-
-When updating Hekate always make sure to _read the release notes_. They may list important changes and modifications to your system.
-
-When a new version of Hekate releases, you can update by following these steps:
-
-1. Turn off your Nintendo Switch and plug your SD card in your computer.
-2. Download the latest version of <a href="https://github.com/CTCaer/Hekate/releases/" target="_blank">Hekate</a> (Download the `hekate_ctcaer_(version).zip` release of hekate).
-3. Copy the `bootloader` folder from the Hekate `.zip` file to the root of your SD card. If you are asked to overwrite or merge files while copying, say yes to merge/overwrite them.
-4. Put your SD card back in your Switch and launch Hekate.
-5. Go to the Options tab at the top right of the screen. Turn "Update Reboot 2 Payload" on the bottom right ON (if it isn't on already). Tap "Save Options" at the bottom of the screen.
+4. Put your SD card back in your Switch and launch CFW.
 
 ## Updating your firmware
 
-Always check _before_ updating your system firmware if the latest version of Atmosphere _as well_ as the latest version of Hekate support the firmware version you are updating towards.
+Always check _before_ updating your system firmware if the latest version of Galactic supports the firmware version you are updating towards.
 
-Currently the latest version supported by Atmosphere and Hekate is: **13.2.1**.
+Currently the latest version supported by Galactic is: **13.2.1**.
 
 In addition, updating to or past some firmwares update the gamecard firmware. Reference the table below for information about these.
 
@@ -51,7 +35,7 @@ In addition, updating to or past some firmwares update the gamecard firmware. Re
 | On or above 9.0.0, but below 11.0.0  | 11.0.0 or above                               | Yes                       |
 | On or above 11.0.0 but below 12.0.0  | At least 11.0.1 but below 12.0.0              | No                        |
 | On or above 11.0.0 but below 12.0.0  | 12.0.0 or above                               | Yes                       |
-| On or above 12.0.0                   | Latest supported Atmosphere & Hekate revision | No                        |
+| On or above 12.0.0                   | Latest supported Galactic revision            | No                        |
 
 If at least one of the versions you are updating towards also updates the gamecard firmware, you will not be able to downgrade below that version without making the gamecard slot unusable until you update.
 
@@ -83,19 +67,19 @@ If you keep your emuMMC offline, you will have to use a gamecard to update your 
 
 !!!tip ""
     - The latest release of <a href="https://github.com/suchmememanyskill/TegraExplorer/releases" target="_blank">TegraExplorer</a>
-    - The latest release of <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a>
+    - The latest release of <a href="https://github.com/GalacticNX/galactic/releases/latest/download/galactic.zip" target="_blank">Galactic</a>
 
 ### Preparing your SD card
 
 1. Insert your microSD card into your computer.
 2. Download `TegraExplorer.bin` and place it somewhere on your PC (A good idea is to put it where you keep all your switch payloads like Hekate).
-3. Update Atmosphere and Hekate by using the above guides.
-4. If you haven't already, update the sysMMC to the latest firmware.
+3. Update Galactic by using the above guide.
+4. If you haven't already, update your sysMMC to the latest firmware.
 
 ### Dumping your sysMMC firmware
 
 1. Make sure your sysMMC is up to date. If your sysMMC is not up-to-date, update it through the System Settings.
-2. Inject `TegraExplorer.bin` using TegraRCMGUI (Like you would with Hekate).
+2. Inject `TegraExplorer.bin`. (Like you would with Hekate).
 3. Using the joystick and the A buttons, select `FirmwareDump.te`.
 4. Wait about 1-2 minutes for the tool to dump your firmware.
 5. When the tool finishes, press any button.
@@ -103,7 +87,7 @@ If you keep your emuMMC offline, you will have to use a gamecard to update your 
 
 ### Updating your emuMMC with Daybreak
 
-1. In Hekate go to `Launch -> Atmosphere FSS0 Emu`.
+1. In Hekate go to `Launch -> Atmosphere`.
 2. Once booted, hold `R` while launching a game to boot into the homebrew menu.
 3. Find Daybreak in the homebrew menu and launch it.
 4. Tap on `Install` and navigate to `tegraexplorer/Firmware/<latest firmware number>`.
