@@ -5,11 +5,11 @@
 ### Making the emuMMC
 
 !!!warning "Before you start"
-    If you don't plan on using the internet on your emuMMC, it is recommended to boot your switch normally and delete all the wifi networks. You can add them back to your sysnand after completing this guide.
+    It is strongly recommended to boot your switch normally and delete all the wifi networks. You can add them back to your sysnand after completing this guide.
 
 !!!tip ""
     1. Enter RCM and inject the Hekate payload
-    2. Use the touch screen to navigate to `emuMMC`
+    2. Use the touch screen or the Joy-Con controllers to navigate to `emuMMC`
     3. Tap on `Create emuMMC`, then select `SD Partition`
     4. Tap on `Part 1`. It will start making the emummc now. After it's done return to the emuMMC menu using the `Close` buttons
     5. Tap on `Change emuMMC`, then `SD RAW 1`
